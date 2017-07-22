@@ -27,6 +27,7 @@ $fontcolor : #eaf2f4;
 }
 
 #new_items{
+    margin-bottom: 30px;
     .flex{
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,43 @@ $fontcolor : #eaf2f4;
                 padding: 10px;
             }
         }
+
+#popular_items{
+    margin-bottom: 30px;
+    .flex{
+    display: flex;
+    justify-content: space-between;
+            }
+            section{
+                background-color: white;
+                margin: 1px;
+                padding: 10px;
+            }
+        }
+
+#shopping_guide{
+    margin-bottom: 30px;
+    .flex{
+    display: flex;
+    justify-content: space-between;
+            }
+            section{
+                background-color: white;
+                margin: 1px;
+                padding: 20px;
+                
+                h4{
+                    color: $subcolor;
+                    @include fontsize(16);
+                    font-weight: bold;
+                }
+                p.shikaku{
+                    color: $subcolor;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
 #sidebar{
     h4{
         display: block;
@@ -62,4 +100,17 @@ $fontcolor : #eaf2f4;
               }
         }
     }
+}//sidebar
+
+footer{
+    .container{
+    border-top: 1px solid #FF9999;
+    ul{
+        li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
 }

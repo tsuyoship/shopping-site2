@@ -9,13 +9,43 @@ li {
   display: inline-block;
   margin-left: 15px; }
 
-#new_items .flex {
-  display: flex;
-  justify-content: space-between; }
-#new_items section {
-  background-color: white;
-  margin: 1px;
-  padding: 10px; }
+#new_items {
+  margin-bottom: 30px; }
+  #new_items .flex {
+    display: flex;
+    justify-content: space-between; }
+  #new_items section {
+    background-color: white;
+    margin: 1px;
+    padding: 10px; }
+
+#popular_items {
+  margin-bottom: 30px; }
+  #popular_items .flex {
+    display: flex;
+    justify-content: space-between; }
+  #popular_items section {
+    background-color: white;
+    margin: 1px;
+    padding: 10px; }
+
+#shopping_guide {
+  margin-bottom: 30px; }
+  #shopping_guide .flex {
+    display: flex;
+    justify-content: space-between; }
+  #shopping_guide section {
+    background-color: white;
+    margin: 1px;
+    padding: 20px; }
+    #shopping_guide section h4 {
+      color: #887f69;
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    #shopping_guide section p.shikaku {
+      color: #887f69;
+      margin-bottom: 3px; }
 
 #sidebar h4 {
   display: block;
@@ -36,5 +66,12 @@ li {
     #sidebar .categories ul li a {
       text-decoration: none;
       color: #887f69; }
+
+footer .container {
+  border-top: 1px solid #FF9999; }
+  footer .container ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
