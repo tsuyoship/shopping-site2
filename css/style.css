@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+  background-color: #f9f8f6; }
+
+/**************************************/
+#header_in .pc_navi_li
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 15px; }
+
+#new_items .flex {
+  display: flex;
+  justify-content: space-between; }
+#new_items section {
+  background-color: white;
+  margin: 1px;
+  padding: 10px; }
+
+#sidebar h4 {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #887f69;
+  padding-left: 20px;
+  padding-bottom: 10px; }
+#sidebar .categories ul {
+  background-color: white; }
+  #sidebar .categories ul li {
+    display: block;
+    padding: 10px 10px 10px 20px;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(136, 127, 105, 0.3);
+    font-size: 14px;
+    font-size: 1.4rem; }
+    #sidebar .categories ul li a {
+      text-decoration: none;
+      color: #887f69; }
+
+/*# sourceMappingURL=style.css.map */
