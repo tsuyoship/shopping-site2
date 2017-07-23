@@ -48,6 +48,13 @@ li {
       color: #887f69;
       margin-bottom: 3px; }
 
+#sidebar .side_f {
+  background: white;
+  padding: 0 10px 20px 10px;
+  margin-bottom: 10px; }
+#sidebar .more_btn {
+  display: block;
+  margin: 0 auto; }
 #sidebar h4 {
   display: block;
   margin: auto;
