@@ -26,7 +26,7 @@ $fontcolor: #eaf2f4;
         list-style-type: none;
         display: inline-block;
         margin-left: 15px;
-		margin-right: 0;
+        margin-right: 0;
     }
 }
 
@@ -101,6 +101,9 @@ $fontcolor: #eaf2f4;
         h4 {
             margin-bottom: 0;
         }
+        img{
+            margin-left: auto;
+        }
         ul {
             background-color: white;
             li {
@@ -122,37 +125,45 @@ $fontcolor: #eaf2f4;
     .shop_info {
         .shop_info_img {
             display: block;
-            padding: 10px;
-            margin: 0 auto;
-        }
-        .more_btn {
-            display: block;
             margin: 0 auto;
         }
     }
+    .more_btn {
+        display: block;
+        margin: 0 auto;
+    }
 } //sidebar
 footer {
+    .page_top {
+        display: block;
+        float: right;
+    }
     .border-line {
-		border-top: 1px solid #FF9999;
-					}
-		.align-center{
-			display: block;
-			margin: 0 auto;
-		}
-	.align-right{
-		display: block;
-		float: right;
-	}
-        ul {
-            li {
-                list-style-type: none;
-                display: inline-block;
-                padding: 10px;
-                margin-right: 10px;
-				a{
-					color: $subcolor;
-					text-decoration: none;
-				}
+        clear: both;
+        border-bottom: 1px solid black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .align-center {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    ul {
+        clear: both;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px;
+            margin-right: 5px;
+            @include fontsize(12);
+            a {
+                color: $subcolor;
+                text-decoration: none;
             }
         }
-    } //footer
+    }
+    .copy {
+        @include fontsize(10);
+    }
+} //footer

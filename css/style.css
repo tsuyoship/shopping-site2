@@ -64,6 +64,8 @@ html {
   padding-bottom: 10px; }
 #sidebar .categories h4 {
   margin-bottom: 0; }
+#sidebar .categories img {
+  margin-left: auto; }
 #sidebar .categories ul {
   background-color: white; }
   #sidebar .categories ul li {
@@ -80,27 +82,37 @@ html {
     border-bottom: none; }
 #sidebar .shop_info .shop_info_img {
   display: block;
-  padding: 10px;
   margin: 0 auto; }
-#sidebar .shop_info .more_btn {
+#sidebar .more_btn {
   display: block;
   margin: 0 auto; }
 
-footer .border-line {
-  border-top: 1px solid #FF9999; }
-footer .align-center {
-  display: block;
-  margin: 0 auto; }
-footer .align-right {
+footer .page_top {
   display: block;
   float: right; }
-footer ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 10px; }
-  footer ul li a {
-    color: #887f69;
-    text-decoration: none; }
+footer .border-line {
+  clear: both;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+footer .align-center {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+footer ul {
+  clear: both; }
+  footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-size: 1.2rem; }
+    footer ul li a {
+      color: #887f69;
+      text-decoration: none; }
+footer .copy {
+  font-size: 10px;
+  font-size: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
