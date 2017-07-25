@@ -3,8 +3,7 @@ html {
   background-color: #f9f8f6; }
 
 /**************************************/
-#header_in .pc_navi_li
-li {
+#header_in .pc_navi_li li {
   list-style-type: none;
   display: inline-block;
   margin-left: 15px; }
@@ -50,7 +49,7 @@ li {
 
 #sidebar .side_f {
   background: white;
-  padding: 0 10px 20px 10px;
+  padding: 0 0 20px 0;
   margin-bottom: 10px; }
 #sidebar .more_btn {
   display: block;
@@ -79,9 +78,9 @@ li {
   #sidebar .categories ul li:last-child {
     border-bottom: none; }
 #sidebar .shop_info .shop_info_img {
-  display: block; }
-  #sidebar .shop_info .shop_info_img img {
-    padding: 10px; }
+  display: block;
+  padding: 10px;
+  margin: 0 auto; }
 #sidebar .shop_info .more_btn {
   display: block;
   margin: 0 auto; }
@@ -91,6 +90,7 @@ footer .container {
   footer .container ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px; }
+    padding: 10px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
