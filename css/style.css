@@ -9,6 +9,18 @@ html {
   margin-left: 15px;
   margin-right: 0; }
 
+#cover_area .owl-dots {
+  text-align: left;
+  margin: 0; }
+  #cover_area .owl-dots .owl-dot span {
+    border-radius: 0px;
+    width: 25px;
+    height: 2px;
+    background: #aaaaaa;
+    margin: 0 10px 0 0; }
+  #cover_area .owl-dots .owl-dot.active span {
+    background: #9d1a2d; }
+
 #new_items {
   margin-bottom: 30px; }
   #new_items .flex {
@@ -25,6 +37,16 @@ html {
     display: flex;
     justify-content: space-between; }
   #popular_items section {
+    background-color: white;
+    margin: 1px;
+    padding: 10px; }
+
+#latest_items {
+  margin-bottom: 30px; }
+  #latest_items .flex {
+    display: flex;
+    justify-content: space-between; }
+  #latest_items section {
     background-color: white;
     margin: 1px;
     padding: 10px; }
@@ -47,6 +69,30 @@ html {
     #shopping_guide section p.shikaku {
       color: #887f69;
       margin-bottom: 3px; }
+
+#categories_area .flex {
+  display: flex;
+  justify-content: space-between; }
+#categories_area section {
+  background-color: white;
+  margin: 1px;
+  padding: 10px; }
+#categories_area .back-btn {
+  display: block;
+  margin: 15px 0;
+  padding: 8px 40px;
+  background-color: #887f69;
+  color: white;
+  font-weight: bold;
+  float: left; }
+#categories_area .next-btn {
+  display: block;
+  margin: 15px 0;
+  padding: 8px 40px;
+  background-color: #887f69;
+  color: white;
+  font-weight: bold;
+  float: right; }
 
 #sidebar .side_f {
   background: white;

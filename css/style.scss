@@ -30,6 +30,27 @@ $fontcolor: #eaf2f4;
     }
 }
 
+#cover_area{
+	.owl-dots{
+		text-align: left;
+		margin: 0;
+		.owl-dot{
+			span{
+				border-radius: 0px;
+				width: 25px;
+				height: 2px;
+				background: #aaaaaa;
+				margin: 0 10px 0 0;
+			}
+		}
+		.owl-dot.active{
+			span{
+			background: #9d1a2d;	
+			}
+			
+		}
+	}
+}
 #new_items {
     margin-bottom: 30px;
     .flex {
@@ -56,6 +77,20 @@ $fontcolor: #eaf2f4;
     }
 }
 
+#latest_items{ 
+	margin-bottom: 30px;
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    section {
+        background-color: white;
+        margin: 1px;
+        padding: 10px;
+    }
+	
+}
+
 #shopping_guide {
     margin-bottom: 30px;
     .flex {
@@ -78,6 +113,37 @@ $fontcolor: #eaf2f4;
         }
     }
 }
+
+#categories_area{
+	.flex{
+		display: flex;
+		justify-content: space-between;
+	}
+	section{
+		background-color: white;
+		margin: 1px;
+		padding: 10px;
+	}
+	.back-btn{
+		display: block;
+		margin: 15px 0;
+		padding: 8px 40px;
+		background-color: #887f69;
+		color: white;
+		font-weight: bold;	
+		float: left;
+	}
+	.next-btn{
+		display: block;
+		margin: 15px 0;
+		padding: 8px 40px;
+		background-color: #887f69;
+		color: white;
+		font-weight: bold;
+		float: right;
+
+	}
+}//#categories_area
 
 #sidebar {
     .side_f {
