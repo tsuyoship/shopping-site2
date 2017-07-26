@@ -14,6 +14,17 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Owl Carouselを動作させるために追加 -->
+  <script src="carousel.js"></script>
+
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -98,8 +109,12 @@
     <div class="row">
       <div class="nine columns">
         <div id="cover_area">
-
-          <!--ここにjqueryの扉画像４つのスライドショーが来る <img class="u-max-full-width" src="images/top/cover_read.png" alt="新時代のソリューションを提供する" srcset="images/top/cover_read@2x.png 2x" />　-->
+          <div class="owl-carousel owl-theme">
+            <div><img src="images/top/ca_banner.jpg"></div>
+            <div><img src="images/top/ca_banner.jpg"></div>
+            <div><img src="images/top/ca_banner.jpg"></div>
+            <div><img src="images/top/ca_banner.jpg"></div>
+          </div>
         </div>
         <!-- #cover -->
 
@@ -222,11 +237,11 @@
         </div>
         <div class="page_link side_f">
           <h4><img class="u-max-full-width" src="images/top/pagelink.png" alt="page_link">
-          <img src="images/top/next_icon.png"></h4>
+            <img src="images/top/next_icon.png"></h4>
         </div>
         <div class="categories side_f">
           <h4><img class="u-max-full-width" src="images/top/categories.png" alt="categories">
-          <img src="images/top/down_icon.png"></h4>
+            <img src="images/top/down_icon.png"></h4>
           <ul>
             <li><a href="#">カテゴリー名<img src="images/top/next_icon_gray.png"></a></li>
             <li><a href="#">カテゴリー名<img src="images/top/next_icon_gray.png"></a></li>
