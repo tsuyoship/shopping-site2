@@ -30,38 +30,46 @@ $fontcolor: #eaf2f4;
     }
 }
 
-#cover_area{
-	.owl-dots{
-		text-align: left;
-		margin: 0;
-		.owl-dot{
-			span{
-				border-radius: 0px;
-				width: 25px;
-				height: 2px;
-				background: #aaaaaa;
-				margin: 0 10px 0 0;
-			}
-		}
-		.owl-dot.active{
-			span{
-			background: #9d1a2d;	
-			}
-			
-		}
-	}
+#cover_area {
+    .owl-dots {
+        text-align: left;
+        margin: 0;
+        .owl-dot {
+            span {
+                border-radius: 0px;
+                width: 25px;
+                height: 2px;
+                background: #aaaaaa;
+                margin: 0 10px 0 0;
+            }
+        }
+        .owl-dot.active {
+            span {
+                background: #9d1a2d;
+            }
+        }
+    }
 }
+
 #new_items {
     margin-bottom: 30px;
     .flex {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        section {
+            background-color: white;
+            margin: 1px 0;
+            padding: 10px;
+            width: calc((100% - 64px) / 3) ;
+            
+            img{
+                width: 100%;
+            }
+        }
     }
-    section {
-        background-color: white;
-        margin: 1px;
-        padding: 10px;
-    }
+    
 }
 
 #popular_items {
@@ -77,8 +85,8 @@ $fontcolor: #eaf2f4;
     }
 }
 
-#latest_items{ 
-	margin-bottom: 30px;
+#latest_items {
+    margin-bottom: 30px;
     .flex {
         display: flex;
         justify-content: space-between;
@@ -88,7 +96,6 @@ $fontcolor: #eaf2f4;
         margin: 1px;
         padding: 10px;
     }
-	
 }
 
 #shopping_guide {
@@ -114,61 +121,65 @@ $fontcolor: #eaf2f4;
     }
 }
 
-#categories_area{
-	.flex{
-		display: flex;
-		justify-content: space-between;
-	}
-	section{
-		background-color: white;
-		margin: 1px;
-		padding: 10px;
-	}
-	.back-btn{
-		display: block;
-		margin: 15px 0;
-		padding: 8px 40px;
-		background-color: #887f69;
-		color: white;
-		font-weight: bold;	
-		float: left;
-	}
-	.next-btn{
-		display: block;
-		margin: 15px 0;
-		padding: 8px 40px;
-		background-color: #887f69;
-		color: white;
-		font-weight: bold;
-		float: right;
-
-	}
-}//#categories_area
-
+#categories_area {
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    section {
+        background-color: white;
+        margin: 1px;
+        padding: 10px;
+    }
+    .back-btn {
+        display: block;
+        margin: 15px 0;
+        padding: 8px 40px;
+        background-color: #887f69;
+        color: white;
+        font-weight: bold;
+        float: left;
+        border-radius: 20px;
+    }
+    .next-btn {
+        display: block;
+        margin: 15px 0;
+        padding: 8px 40px;
+        background-color: #887f69;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+        float: right;
+    }
+} //#categories_area
 #sidebar {
     .side_f {
         background: white;
         padding: 0 0 20px 0;
         margin-bottom: 10px;
+        h4 {
+            display: flex;
+            margin: auto;
+            margin-bottom: 10px;
+            background-color: $subcolor;
+            padding: 0 20px;
+            height: 40px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .page_link.side_f {
+        padding: 0;
     }
     .more_btn {
         display: block;
         margin: 0 auto;
     }
-    h4 {
-        display: block;
-        margin: auto;
-        margin-bottom: 10px;
-        background-color: $subcolor;
-        padding-left: 20px;
-        padding-bottom: 10px;
-    }
-    .categories {
+    .categories.side_f {
+        padding: 0;
         h4 {
             margin-bottom: 0;
-        }
-        img{
-            margin-left: auto;
+        
         }
         ul {
             background-color: white;
@@ -176,11 +187,11 @@ $fontcolor: #eaf2f4;
                 display: block;
                 padding: 10px 10px 10px 20px;
                 list-style-type: none;
-                border-bottom: 1px solid rgba(136, 127, 105, 0.3);
+                border-bottom: 1px solid #f9f8f6;
                 @include fontsize(14);
                 a {
                     text-decoration: none;
-                    color: $subcolor;
+                    color: black;
                 }
             }
             li:last-child {

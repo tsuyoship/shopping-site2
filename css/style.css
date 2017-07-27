@@ -25,11 +25,15 @@ html {
   margin-bottom: 30px; }
   #new_items .flex {
     display: flex;
-    justify-content: space-between; }
-  #new_items section {
-    background-color: white;
-    margin: 1px;
-    padding: 10px; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #new_items .flex section {
+      background-color: white;
+      margin: 1px 0;
+      padding: 10px;
+      width: calc((100% - 64px) / 3); }
+      #new_items .flex section img {
+        width: 100%; }
 
 #popular_items {
   margin-bottom: 30px; }
@@ -84,7 +88,8 @@ html {
   background-color: #887f69;
   color: white;
   font-weight: bold;
-  float: left; }
+  float: left;
+  border-radius: 20px; }
 #categories_area .next-btn {
   display: block;
   margin: 15px 0;
@@ -92,40 +97,45 @@ html {
   background-color: #887f69;
   color: white;
   font-weight: bold;
+  border-radius: 20px;
   float: right; }
 
 #sidebar .side_f {
   background: white;
   padding: 0 0 20px 0;
   margin-bottom: 10px; }
+  #sidebar .side_f h4 {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #887f69;
+    padding: 0 20px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center; }
+#sidebar .page_link.side_f {
+  padding: 0; }
 #sidebar .more_btn {
   display: block;
   margin: 0 auto; }
-#sidebar h4 {
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-  background-color: #887f69;
-  padding-left: 20px;
-  padding-bottom: 10px; }
-#sidebar .categories h4 {
-  margin-bottom: 0; }
-#sidebar .categories img {
-  margin-left: auto; }
-#sidebar .categories ul {
-  background-color: white; }
-  #sidebar .categories ul li {
-    display: block;
-    padding: 10px 10px 10px 20px;
-    list-style-type: none;
-    border-bottom: 1px solid rgba(136, 127, 105, 0.3);
-    font-size: 14px;
-    font-size: 1.4rem; }
-    #sidebar .categories ul li a {
-      text-decoration: none;
-      color: #887f69; }
-  #sidebar .categories ul li:last-child {
-    border-bottom: none; }
+#sidebar .categories.side_f {
+  padding: 0; }
+  #sidebar .categories.side_f h4 {
+    margin-bottom: 0; }
+  #sidebar .categories.side_f ul {
+    background-color: white; }
+    #sidebar .categories.side_f ul li {
+      display: block;
+      padding: 10px 10px 10px 20px;
+      list-style-type: none;
+      border-bottom: 1px solid #f9f8f6;
+      font-size: 14px;
+      font-size: 1.4rem; }
+      #sidebar .categories.side_f ul li a {
+        text-decoration: none;
+        color: black; }
+    #sidebar .categories.side_f ul li:last-child {
+      border-bottom: none; }
 #sidebar .shop_info .shop_info_img {
   display: block;
   margin: 0 auto; }
