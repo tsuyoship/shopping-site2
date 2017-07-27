@@ -40,39 +40,45 @@ html {
   #popular_items .flex {
     display: flex;
     justify-content: space-between; }
-  #popular_items section {
-    background-color: white;
-    margin: 1px;
-    padding: 10px; }
+    #popular_items .flex section {
+      background-color: white;
+      margin: 1px 0;
+      padding: 10px;
+      width: calc((100% - 64px) / 3); }
+      #popular_items .flex section img {
+        width: 100%; }
 
 #latest_items {
   margin-bottom: 30px; }
   #latest_items .flex {
     display: flex;
     justify-content: space-between; }
-  #latest_items section {
-    background-color: white;
-    margin: 1px;
-    padding: 10px; }
+    #latest_items .flex section {
+      background-color: white;
+      margin: 1px 0;
+      padding: 10px;
+      width: calc((100% - 64px) / 3); }
+      #latest_items .flex section img {
+        width: 100%; }
 
 #shopping_guide {
   margin-bottom: 30px; }
   #shopping_guide .flex {
     display: flex;
     justify-content: space-between; }
-  #shopping_guide section {
-    background-color: white;
-    margin: 1px;
-    padding: 20px;
-    width: 45%; }
-    #shopping_guide section h4 {
-      color: #887f69;
-      font-size: 16px;
-      font-size: 1.6rem;
-      font-weight: bold; }
-    #shopping_guide section p.shikaku {
-      color: #887f69;
-      margin-bottom: 3px; }
+    #shopping_guide .flex section {
+      background-color: white;
+      margin: 3px;
+      padding: 20px;
+      width: calc((100% - 6px) / 2); }
+      #shopping_guide .flex section h4 {
+        color: #887f69;
+        font-size: 16px;
+        font-size: 1.6rem;
+        font-weight: bold; }
+      #shopping_guide .flex section p.shikaku {
+        color: #887f69;
+        margin-bottom: 3px; }
 
 #categories_area .flex {
   display: flex;
@@ -124,21 +130,26 @@ html {
     margin-bottom: 0; }
   #sidebar .categories.side_f ul {
     background-color: white; }
-    #sidebar .categories.side_f ul li {
-      display: block;
-      padding: 10px 10px 10px 20px;
-      list-style-type: none;
-      border-bottom: 1px solid #f9f8f6;
-      font-size: 14px;
-      font-size: 1.4rem; }
-      #sidebar .categories.side_f ul li a {
-        text-decoration: none;
-        color: black; }
+    #sidebar .categories.side_f ul a {
+      text-decoration: none;
+      color: black; }
+      #sidebar .categories.side_f ul a li {
+        display: flex;
+        margin: auto;
+        padding: 0 20px;
+        height: 40px;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        border-bottom: 1px solid #f9f8f6;
+        font-size: 14px;
+        font-size: 1.4rem; }
     #sidebar .categories.side_f ul li:last-child {
       border-bottom: none; }
-#sidebar .shop_info .shop_info_img {
-  display: block;
-  margin: 0 auto; }
+#sidebar .about .about_body {
+  padding: 0 10px; }
+#sidebar .shop_info .shop_info_body {
+  padding: 0 10px; }
 #sidebar .more_btn {
   display: block;
   margin: 0 auto; }
