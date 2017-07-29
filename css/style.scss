@@ -53,7 +53,7 @@ $fontcolor: #eaf2f4;
 
 #new_items {
     margin-bottom: 30px;
-    h3{
+    h3 {
         background-image: url(..images/top/);
     }
     .flex {
@@ -80,7 +80,7 @@ $fontcolor: #eaf2f4;
                 }
             }
         }
-    }//@media
+    } //@media
 }
 
 #popular_items {
@@ -99,7 +99,7 @@ $fontcolor: #eaf2f4;
             }
         }
     }
-        @media (max-width: 550px) {
+    @media (max-width: 550px) {
         .flex {
             section {
                 padding: 10px;
@@ -109,7 +109,7 @@ $fontcolor: #eaf2f4;
                 }
             }
         }
-    }//@media
+    } //@media
 }
 
 #latest_items {
@@ -260,6 +260,10 @@ footer {
     .page_top {
         display: block;
         float: right;
+        @media (max-width: 550px){
+        clear:both;
+        margin: 0 auto;
+    }
     }
     .border-line {
         clear: both;
@@ -290,3 +294,17 @@ footer {
         @include fontsize(10);
     }
 } //footer
+@media (max-width: 550px) {
+    h3.hp-h3 {
+        display: none;
+    }
+    h3.sp-h3 {
+            margin: 0 auto;
+        
+    }
+} //sp用
+@media (min-width: 551px) {
+    h3.sp-h3 {
+        display: none;
+    }
+} //HP用

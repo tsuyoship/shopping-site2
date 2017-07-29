@@ -177,6 +177,10 @@ html {
 footer .page_top {
   display: block;
   float: right; }
+  @media (max-width: 550px) {
+    footer .page_top {
+      clear: both;
+      margin: 0 auto; } }
 footer .border-line {
   clear: both;
   border-bottom: 1px solid black;
@@ -201,5 +205,15 @@ footer ul {
 footer .copy {
   font-size: 10px;
   font-size: 1rem; }
+
+@media (max-width: 550px) {
+  h3.hp-h3 {
+    display: none; }
+
+  h3.sp-h3 {
+    margin: 0 auto; } }
+@media (min-width: 551px) {
+  h3.sp-h3 {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
