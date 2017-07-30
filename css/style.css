@@ -130,6 +130,20 @@ html {
   background: white;
   padding: 0 0 20px 0;
   margin-bottom: 10px; }
+  #sidebar .side_f form {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 10px; }
+    #sidebar .side_f form img {
+      position: absolute;
+      top: 10px;
+      right: 20px; }
+    #sidebar .side_f form input {
+      width: 100%;
+      margin-bottom: 0;
+      background-color: #eeeeee;
+      border: 0;
+      border-radius: 0; }
   #sidebar .side_f h4 {
     display: flex;
     margin: auto;
@@ -211,7 +225,14 @@ footer .copy {
     display: none; }
 
   h3.sp-h3 {
-    margin: 0 auto; } }
+    text-align: center; }
+
+  .shop_info_body {
+    display: flex; }
+    .shop_info_body .sp_float_img {
+      flex: 1; }
+    .shop_info_body .sp_float_txt {
+      flex: 1; } }
 @media (min-width: 551px) {
   h3.sp-h3 {
     display: none; } }
