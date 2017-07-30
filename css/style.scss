@@ -318,13 +318,41 @@ footer {
     h3.sp-h3 {
         text-align: center;
     }
+    .item-serch{
+        h4{
+            display: none;
+        }
+    }
     .shop_info_body {
         display: flex;
         .sp_float_img {
             flex: 1;
         }
         .sp_float_txt {
+            padding-left: 20px;
             flex: 1;
+            img {
+                margin: 0;
+            }
+        }
+    }
+    .about_body {
+        display: flex;
+        .about_float_img {
+            flex: 1;
+        }
+        .about_float_txt {
+            padding-left: 20px;
+            flex: 1;
+        }
+    }
+    footer {
+        .page-top {
+            img {
+                .align-center {
+                    item-align: center;
+                }
+            }
         }
     }
 } //sp用
