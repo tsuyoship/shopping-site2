@@ -63,11 +63,46 @@ html {
       #popular_items .flex section img {
         width: 100%; } }
 
+#categories_area {
+  margin-bottom: 30px; }
+  #categories_area .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #categories_area .flex section {
+      background-color: white;
+      margin: 1px 0;
+      padding: 10px;
+      width: calc((100% - 64px) / 3); }
+      #categories_area .flex section img {
+        width: 100%; }
+  #categories_area .back-btn,
+  #categories_area .next-btn {
+    display: block;
+    margin: 15px 0;
+    padding: 8px 40px;
+    background-color: #887f69;
+    color: white;
+    font-weight: bold;
+    float: left;
+    border-radius: 0; }
+  #categories_area .back-btn {
+    float: left; }
+  #categories_area .next-btn {
+    float: right; }
+  @media (max-width: 550px) {
+    #categories_area .flex section {
+      padding: 10px;
+      width: calc((100% - 42px) / 2); }
+      #categories_area .flex section img {
+        width: 100%; } }
+
 #latest_items {
   margin-bottom: 30px; }
   #latest_items .flex {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     #latest_items .flex section {
       background-color: white;
       margin: 1px 0;
@@ -75,6 +110,12 @@ html {
       width: calc((100% - 64px) / 3); }
       #latest_items .flex section img {
         width: 100%; }
+  @media (max-width: 550px) {
+    #latest_items .flex section {
+      padding: 10px;
+      width: calc((100% - 42px) / 2); }
+      #latest_items .flex section img {
+        width: 100%; } }
 
 #shopping_guide {
   margin-bottom: 30px; }
@@ -99,32 +140,6 @@ html {
       flex-direction: column; }
       #shopping_guide .flex section {
         width: 86%; } }
-
-#categories_area .flex {
-  display: flex;
-  justify-content: space-between; }
-#categories_area section {
-  background-color: white;
-  margin: 1px;
-  padding: 10px; }
-#categories_area .back-btn {
-  display: block;
-  margin: 15px 0;
-  padding: 8px 40px;
-  background-color: #887f69;
-  color: white;
-  font-weight: bold;
-  float: left;
-  border-radius: 20px; }
-#categories_area .next-btn {
-  display: block;
-  margin: 15px 0;
-  padding: 8px 40px;
-  background-color: #887f69;
-  color: white;
-  font-weight: bold;
-  border-radius: 20px;
-  float: right; }
 
 #sidebar .side_f {
   background: white;
@@ -225,6 +240,7 @@ footer .copy {
     display: none; }
 
   h3.sp-h3 {
+    clear: both;
     text-align: center; }
 
   .item-serch h4 {
