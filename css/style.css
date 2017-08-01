@@ -9,6 +9,19 @@ html {
   margin-left: 15px;
   margin-right: 0; }
 
+.b-list ul {
+  margin-bottom: 10px;
+  background-color: #e8e4da;
+  border-radius: 4px;
+  padding: 5px; }
+  .b-list ul li {
+    display: inline-block;
+    vertical-align: middle;
+    color: #887f69; }
+    .b-list ul li a {
+      text-decoration: none;
+      color: #887f69; }
+
 #cover_area .owl-dots {
   text-align: left;
   margin: 0; }
@@ -109,13 +122,32 @@ html {
     width: 75px;
     cursor: pointer; }
   #products h4 {
-    display: block;
     width: 100%;
-    border-top: 1px solid #ff9999; }
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #e8e4da;
+    color: #887f69;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold; }
+    #products h4 img {
+      vertical-align: middle; }
+  #products p.shikaku {
+    color: #887f69;
+    font-weight: bold;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding-top: 20px;
+    border-top: 1px solid #887f69; }
   #products table {
-    width: 100%; }
+    width: 100%;
+    border: #e8e4da 1px solid;
+    color: #887f69;
+    font-size: 12px;
+    font-size: 1.2rem; }
     #products table th {
-      text-align: center; }
+      text-align: center;
+      background-color: #f9f9f5; }
 
 #latest_items {
   margin-bottom: 30px; }
@@ -154,6 +186,9 @@ html {
         font-weight: bold; }
       #shopping_guide .flex section p.shikaku {
         color: #887f69;
+        font-weight: bold;
+        font-size: 16px;
+        font-size: 1.6rem;
         margin-bottom: 3px; }
   @media (max-width: 550px) {
     #shopping_guide .flex {

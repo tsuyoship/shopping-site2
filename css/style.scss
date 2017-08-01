@@ -28,8 +28,24 @@ $fontcolor: #eaf2f4;
         margin-left: 15px;
         margin-right: 0;
     }
-}//#header_in
-
+} //#header_in
+.b-list{
+    ul{
+		margin-bottom: 10px;
+		background-color: #e8e4da;
+		border-radius: 4px;
+		padding: 5px;
+        li{
+            display: inline-block;
+            vertical-align: middle;
+            color: $subcolor;
+            a{
+                text-decoration: none;
+                color: $subcolor;
+            }
+        }
+    }
+}
 #cover_area {
     .owl-dots {
         text-align: left;
@@ -49,8 +65,7 @@ $fontcolor: #eaf2f4;
             }
         }
     }
-}//#cover_area
-
+} //#cover_area
 #new_items {
     margin-bottom: 30px;
     h3 {
@@ -81,8 +96,7 @@ $fontcolor: #eaf2f4;
             }
         }
     } //@media
-}//#new_items
-
+} //#new_items
 #popular_items {
     margin-bottom: 30px;
     .flex {
@@ -110,8 +124,7 @@ $fontcolor: #eaf2f4;
             }
         }
     } //@media
-}//#popular_items
-
+} //#popular_items
 #categories_area {
     margin-bottom: 30px;
     .flex {
@@ -127,27 +140,24 @@ $fontcolor: #eaf2f4;
                 width: 100%;
             }
         }
-        
     }
-        .back-btn,
-        .next-btn {
-            display: block;
-            margin: 15px 0;
-            padding: 8px 40px;
-            background-color: #887f69;
-            color: white;
-            font-weight: bold;
-            float: left;
-            border-radius: 0;
-        }
-        .back-btn {
-            float: left;
-        }
-        .next-btn {
-            float: right;
-        }
-        
-    
+    .back-btn,
+    .next-btn {
+        display: block;
+        margin: 15px 0;
+        padding: 8px 40px;
+        background-color: $subcolor;
+        color: white;
+        font-weight: bold;
+        float: left;
+        border-radius: 0;
+    }
+    .back-btn {
+        float: left;
+    }
+    .next-btn {
+        float: right;
+    }
     @media (max-width: 550px) {
         .flex {
             section {
@@ -160,36 +170,50 @@ $fontcolor: #eaf2f4;
         }
     }
 } //categories_area
-
-#products{
+#products {
     background-color: white;
-	padding: 40px;
+    padding: 40px;
     #display_img img {
-  width: 410px;
-}
-li {
-  list-style: none;
-  display: inline-block;
-}
-li img {
-  width: 75px;
-  cursor: pointer;
-}
-h4{
-		display: block;
-		width: 100%;
-		border-top: 1px solid #ff9999;
-	}
-	table{
-		width: 100%;
-		th{
-			text-align: center;
-		}
-	}
-}//#products
-
-
-
+        width: 410px;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    li img {
+        width: 75px;
+        cursor: pointer;
+    }
+    h4 {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-top: 1px solid #e8e4da;
+        color: #887f69;
+        @include fontsize(16);
+        font-weight: bold;
+        img {
+            vertical-align: middle;
+        }
+    }
+    p.shikaku {
+        color: #887f69;
+        font-weight: bold;
+        @include fontsize(16);
+        padding-top: 20px;
+        border-top: 1px solid $subcolor;
+    }
+    table {
+        width: 100%;
+        border: #e8e4da 1px solid;
+        color: #887f69;
+        @include fontsize(12);
+        th {
+            text-align: center;
+            background-color: #f9f9f5;
+        }
+    }
+} //#products
 #latest_items {
     margin-bottom: 30px;
     .flex {
@@ -218,7 +242,6 @@ h4{
         }
     }
 } //#latest_items
-
 #shopping_guide {
     margin-bottom: 30px;
     .flex {
@@ -236,6 +259,8 @@ h4{
             }
             p.shikaku {
                 color: $subcolor;
+                font-weight: bold;
+                @include fontsize(16);
                 margin-bottom: 3px;
             }
         }
@@ -332,7 +357,6 @@ h4{
         margin: 0 auto;
     }
 } //sidebar
-
 footer {
     .page_top {
         display: block;
@@ -371,7 +395,6 @@ footer {
         @include fontsize(10);
     }
 } //footer
-
 @media (max-width: 550px) {
     h3.hp-h3 {
         display: none;
@@ -418,7 +441,6 @@ footer {
         }
     }
 } //sp用
-
 @media (min-width: 551px) {
     h3.sp-h3 {
         display: none;
