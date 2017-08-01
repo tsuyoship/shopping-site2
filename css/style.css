@@ -97,6 +97,26 @@ html {
       #categories_area .flex section img {
         width: 100%; } }
 
+#products {
+  background-color: white;
+  padding: 40px; }
+  #products #display_img img {
+    width: 410px; }
+  #products li {
+    list-style: none;
+    display: inline-block; }
+  #products li img {
+    width: 75px;
+    cursor: pointer; }
+  #products h4 {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ff9999; }
+  #products table {
+    width: 100%; }
+    #products table th {
+      text-align: center; }
+
 #latest_items {
   margin-bottom: 30px; }
   #latest_items .flex {
