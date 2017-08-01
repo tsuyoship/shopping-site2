@@ -225,6 +225,7 @@ $fontcolor: #eaf2f4;
             color: #887f69;
             @include fontsize(12);
             th {
+                width: calc(100% / 3);
                 text-align: center;
                 background-color: #f9f9f5;
             }
