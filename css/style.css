@@ -3,6 +3,8 @@ html {
   background-color: #f9f8f6; }
 
 /**************************************/
+#header_in ul {
+  margin-top: 20px; }
 #header_in .pc_navi_li li {
   list-style-type: none;
   display: inline-block;
@@ -236,6 +238,8 @@ html {
     height: 40px;
     justify-content: space-between;
     align-items: center; }
+  #sidebar .side_f h4.search {
+    background: none; }
 #sidebar .page_link.side_f {
   padding: 0; }
 #sidebar .more_btn {

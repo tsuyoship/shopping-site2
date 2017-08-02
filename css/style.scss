@@ -22,6 +22,9 @@ $fontcolor: #eaf2f4;
 /**************************************/
 
 #header_in {
+    ul {
+        margin-top: 20px;
+    }
     .pc_navi_li li {
         list-style-type: none;
         display: inline-block;
@@ -324,6 +327,9 @@ $fontcolor: #eaf2f4;
             height: 40px;
             justify-content: space-between;
             align-items: center;
+        }
+        h4.search{
+            background: none;
         }
     }
     .page_link.side_f {
