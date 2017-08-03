@@ -15,11 +15,18 @@ html {
   margin-bottom: 10px;
   background-color: #e8e4da;
   border-radius: 4px;
-  padding: 5px; }
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 35px; }
   .b-list ul li {
-    display: inline-block;
-    vertical-align: middle;
-    color: #887f69; }
+    color: #887f69;
+    margin-bottom: 0; }
+    .b-list ul li + li::before {
+      content: '/';
+      margin: 0 1rem; }
     .b-list ul li a {
       text-decoration: none;
       color: #887f69; }
