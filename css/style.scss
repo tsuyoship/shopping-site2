@@ -24,6 +24,7 @@ $fontcolor: #eaf2f4;
 #header_in {
     ul {
         margin-top: 20px;
+        text-align: center;
     }
     .pc_navi_li li {
         list-style-type: none;
@@ -31,6 +32,12 @@ $fontcolor: #eaf2f4;
         margin-left: 15px;
         margin-right: 0;
     }
+	.sp_navi_li li{
+		list-style-type: none;
+		display: inline-block;
+		margin: 0 5px;
+	}
+
 } //#header_in
 .b-list {
     ul {
@@ -429,7 +436,15 @@ footer {
         @include fontsize(10);
     }
 } //footer
+
 @media (max-width: 550px) {
+    h1{
+        margin-top: 20px;
+        img{
+        display: block;
+        margin: 0 auto;
+    }
+    }
     h3.hp-h3 {
         display: none;
     }
@@ -437,10 +452,16 @@ footer {
         clear: both;
         text-align: center;
     }
+    .pc_navi{
+        display:none;
+    }
     .item-serch {
-        h4 {
+        h4.search {
             display: none;
-        }
+            img{
+                display: none;
+            }
+		}
     }
     .shop_info_body {
         display: flex;
@@ -467,16 +488,19 @@ footer {
     }
     footer {
         .page-top {
+			margin: 0 auto;
             img {
-                .align-center {
-                    item-align: center;
-                }
+                display: block;
+			}
             }
         }
-    }
+    
 } //sp用
 @media (min-width: 551px) {
     h3.sp-h3 {
         display: none;
     }
+	.sp_navi{
+		display: none;
+	}
 } //HP用
